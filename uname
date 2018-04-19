@@ -1,0 +1,2 @@
+#!/bin/bash
+/opt/nec/ve/bin/uname "$@" | tail -1
