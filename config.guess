@@ -1051,6 +1051,9 @@ EOF
     xtensa*:Linux:*:*)
 	echo "$UNAME_MACHINE"-unknown-linux-"$LIBC"
 	exit ;;
+    ve:Linux:*:*)
+        echo ${UNAME_MACHINE}-unknown-linux-${LIBC}
+        exit ;;
     i*86:DYNIX/ptx:4*:*)
 	# ptx 4.0 does uname -s correctly, with DYNIX/ptx in there.
 	# earlier versions are messed up and put the nodename in both
